@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-model</title>
+    <style>
+        h4 {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 透過 v-model 綁定 checkboxArray 物件，若勾選則加入 checkboxArray 物件，呈現畫面，告知使用者，晚餐火鍋有哪些料。 -->
+
+        <h4>Checkbox 複選</h4>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check2" v-model="checkboxArray" value="雞" />
+            <label class="form-check-label" for="check2"> 雞 </label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check3" v-model="checkboxArray" value="豬" />
+            <label class="form-check-label" for="check3"> 豬 </label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check4" v-model="checkboxArray" value="牛" />
+            <label class="form-check-label" for="check4"> 牛 </label>
+        </div>
+
+        <p>晚餐火鍋裡有 {{checkboxArray}} 。</p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/Vue.js自學html/vue.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-model</title>
+    <style>
+        h4 {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 透過 v-model 綁定 checkbox1 狀態，以 true & false 切換勾選狀態 -->
+
+    <h4>Checkbox 勾選</h4>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="check1" v-model="checkbox1" />
+        <label class="form-check-label" for="check1"> {{check1}} </label>
+    </div>
+</body>
+
+</html>
